@@ -11,10 +11,10 @@
 <style>
     body{
 
-        display :inline-block;
+        /* display :inline-block; */
         background-color:bisque;
         background-image: url("yellow-background.png");
-        margin: 30px;
+        /* margin: 30px; */
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -31,20 +31,11 @@
     .typewriter h1
     {
         width: auto;
-        display: inline-block;
-        
-
-       
-        overflow: hidden;
-        border-right: .10em solid green;
-        white-space: nowrap;
         margin: 0 auto;
         letter-spacing: .05em;
-        animation: typing 3.5s steps(30,end), 
-                  blink-caret .5s step-end infinite;
     }
 
-    @keyframes typing 
+     @keyframes typing 
     {
         from {width: 0}
         to {width: 43%;}
@@ -55,13 +46,32 @@
         from,to {border-color: transparent}
         43% {border-color: black}
         
+    } 
+
+    @media (min-width:600px) {
+
+        .typewriter h1
+        {
+            display: inline-block;
+        
+
+       
+        overflow: hidden;
+        border-right: .10em solid green;
+        white-space: nowrap;
+        animation: typing 3.5s steps(30,end), 
+                  blink-caret .5s step-end infinite;
+        }
+        
     }
 </style>
 <body>
     <!-- use ctrl+/ to comment,use same to uncomment -->
  
+   <div class="container">
     <div class="typewriter">
         <h1 data-text ="List of some Useful Resources">List of some Useful Resources</h1>
+        <!-- <h1>List of some Useful Resources</h1> -->
     </div>
     <hr>
     <p>These resoures will help you in <b>CRT (campus recruitment test)</b></p>
@@ -82,7 +92,7 @@
 
     <p><center><img src="images.jpg" alt="image" width="200px"></center></p>
 
-    <pre><b><center>“If you can’t fly, then run.
+    <!-- <pre><b><center>“If you can’t fly, then run.
 
  If you can’t run, then walk.
                 
@@ -90,7 +100,8 @@
                 
     But by all means, keep moving.”
         
-                - Martin Luther king</center></b></pre>
+                - Martin Luther king</center></b></pre> -->
+   </div>
 </body>
 </html>
 
